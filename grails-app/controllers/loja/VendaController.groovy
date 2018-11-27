@@ -19,10 +19,12 @@ class VendaController {
     }
 
     def create() {
+        params.data = new Date()
         respond new Venda(params)
     }
 
     def save(Venda venda) {
+        venda.data = new Date()
         if (venda == null) {
             notFound()
             return

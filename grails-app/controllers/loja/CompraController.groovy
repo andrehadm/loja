@@ -14,6 +14,11 @@ class CompraController {
         respond compraService.list(params), model:[compraCount: compraService.count()]
     }
 
+    def venda(Integer max) {
+        params.max = Math.min(max ?: 10, 100)
+        respond compraService.list(params), model:[compraCount: compraService.count()]
+    }
+
     def show(Long id) {
         respond compraService.get(id)
     }
