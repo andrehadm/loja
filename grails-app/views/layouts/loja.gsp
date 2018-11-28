@@ -49,6 +49,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <g:link class="dropdown-item" controller="compra" action="index">Inventário</g:link>
                         <g:link class="dropdown-item" controller="Venda" action="index">Histórico</g:link>
+                        <g:link class="dropdown-item" controller="Venda" action="balanco">Balanço</g:link>
                     </div>
                 </div>
 
